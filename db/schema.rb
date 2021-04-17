@@ -28,7 +28,6 @@ ActiveRecord::Schema.define(version: 2021_04_17_214946) do
     t.boolean "opened"
     t.string "image"
     t.float "price"
-    t.integer "quantity"
     t.float "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

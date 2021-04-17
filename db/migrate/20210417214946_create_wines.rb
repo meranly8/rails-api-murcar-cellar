@@ -8,7 +8,6 @@ class CreateWines < ActiveRecord::Migration[6.1]
       t.boolean :opened
       t.string :image
       t.float :price
-      t.integer :quantity
       t.float :rating
 
       t.timestamps

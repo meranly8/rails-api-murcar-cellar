@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2021_04_17_214946) do
   create_table "comments", force: :cascade do |t|
     t.string "name"
     t.string "comment"
+    t.integer "wine_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

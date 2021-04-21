@@ -1,6 +1,6 @@
 class WinesController < ApplicationController
     def index
-        wines = Wine.all
+        wines = Wine.all.sort_by {|obj| obj.wine}
         render json: WineSerializer.new(wines)
     end
 

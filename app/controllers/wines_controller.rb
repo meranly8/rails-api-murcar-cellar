@@ -18,6 +18,12 @@ class WinesController < ApplicationController
         end
     end
 
+    def destroy
+        wine = Wine.find_by(id: params[:id])
+        wine.destroy
+        render json: {message: "#{wine.wine} has been deleted."}
+    end
+
 
     private
         def wine_params

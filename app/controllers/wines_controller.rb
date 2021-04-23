@@ -6,6 +6,7 @@ class WinesController < ApplicationController
 
     def show
         wine = Wine.find_by(id: params[:id])
+        comments = wine.comments
         render json: WineSerializer.new(wine, include: [:comments])
     end
 
@@ -15,6 +16,15 @@ class WinesController < ApplicationController
             render json: WineSerializer.new(wine)
         else
             render json: {invalid: "Error occurred when trying to save wine"}
+        end
+    end
+
+    def update 
+        wine = Wine.find_by(id: params[:id])
+        if wine.update(wine_params)
+            render json: WineSerializer.new(wine)
+        else
+            render json: {invalid: "Error occurred when trying to update wine"}
         end
     end
 

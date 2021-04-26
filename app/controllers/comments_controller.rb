@@ -18,6 +18,13 @@ class CommentsController < ApplicationController
         end
     end
 
+    def destroy
+        comment = Comment.find_by(id: params[:id])
+        comment.destroy
+        render json: {message: "#{comment.name}'s comment on #{comment.wine.wine} has been deleted: #{comment.comment}"}
+    end
+
+
     private
         def comment_params
             params.permit(:name, :comment, :wine_id)

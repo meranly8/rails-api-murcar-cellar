@@ -6,7 +6,6 @@ class WinesController < ApplicationController
 
     def show
         wine = Wine.find_by(id: params[:id])
-        comments = wine.comments
         render json: WineSerializer.new(wine, include: [:comments])
     end
 

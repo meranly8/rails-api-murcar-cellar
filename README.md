@@ -1,24 +1,34 @@
-# README
+# MURCAR Cellar Rails API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+API back-end server holding a collection of wines from around the world. To be used with [js-murcar-cellar](https://github.com/meranly8/js-murcar-cellar) JavaScript application to view, add, update, delete wines & view, add, delete comments on the wines in the cellar. MURCAR is the initials of my parents & this application & API are inspired by their appreciation for the fermented grapes. 
 
-Things you may want to cover:
+![wine cellar][logo]
 
-* Ruby version
+[logo]: https://i.imgur.com/zzv6xVM.jpg "Wine Cellar"
 
-* System dependencies
+## Installation
+In terminal, in appropriate directory, clone the code for ***back-end*** & cd into  directory.
+```ruby
+git clone git@github.com:meranly8/rails-api-murcar-cellar.git
+cd rails-api-murcar-cellar
+```
 
-* Configuration
+## Usage
+Launch web server using terminal by calling
+```ruby
+rails s
+```
+ Navigate to [localhost:3000/wines](localhost:3000/wines) to see data.
 
-* Database creation
+## Support
+If an issue arises, please open an issue and assign it to meranly8\
+[Open New Issue for rails-api-murcar-cellar](https://github.com/meranly8/rails-api-murcar-cellar/issues/new)
 
-* Database initialization
+## Contribution
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change or add.
 
-* How to run the test suite
+## License
+[MIT License](https://choosealicense.com/licenses/mit/)
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Copyright (c) 2021 Michelle Ranly

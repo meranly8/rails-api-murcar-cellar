@@ -3,7 +3,9 @@
 ## About
 API back-end server holding a collection of wines from around the world. To be used with [js-murcar-cellar](https://github.com/meranly8/js-murcar-cellar) JavaScript application to view, add, update, delete wines & view, add, delete comments on the wines in the cellar. MURCAR is the initials of my parents & this API & application are inspired by their appreciation for the fermented grapes. 
 
-[Imgur](https://i.imgur.com/ECFmVfHh.png)
+![drinking wine][logo]
+
+[logo]: https://i.imgur.com/ECFmVfHh.png "Drinking wine"
 
 ## Installation
 In terminal, in appropriate directory, clone the code & cd into  directory.

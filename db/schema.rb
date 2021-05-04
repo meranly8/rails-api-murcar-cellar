@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2021_05_04_040357) do
     t.float "rating"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "quantity"
+    t.integer "quantity", default: 0
   end
 
 end
